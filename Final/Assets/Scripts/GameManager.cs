@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour
 {
@@ -19,12 +20,15 @@ public class GameManager : MonoBehaviour
     public GameObject psq;
     GameObject[] bacteria;
 
-    int hidden = 50;
-    int shown = 0;
+    double hidden = 50;
+    double shown = 0;
+    double gone;
+    
     void Start()
-    {
+    {   
+        
         bacteria = new GameObject[] { bc, bcs, bs, bsq, gc, gcs, gs, gsq, pc, pcs, ps, psq };
-        InvokeRepeating("make", 3, 15);
+        InvokeRepeating("make", 1, 15);
     }
 
     // Update is called once per frame
@@ -63,7 +67,32 @@ public class GameManager : MonoBehaviour
                 shown += 1;
                 Instantiate(bacteria[random], new Vector3(x, y, z), Quaternion.identity);
             }
+            
         }
+        Debug.Log("Hidden: " + hidden);
+        Debug.Log("Shown: " + shown);
+        Debug.Log("Gone: " + gone);
 
+    }
+
+    void End()
+    {
+        Debug.Log("GAME OVER");
+        if((hidden+shown) < (hidden+shown+gone)*0.8)
+        {
+            Debug.Log("WIN!");
+        }
+        else { Debug.Log("Not enough :("); }
+    }
+
+    void destroy(GameObject obj)
+    {
+        obj.transform.localScale += new Vector3(-0.05f, -0.05f, -0.05f);
+        Destroy(obj, (float) 0.5);
+        shown -= 1;
+        gone += 1;
+        Debug.Log("Hidden: " + hidden);
+        Debug.Log("Shown: " + shown);
+        Debug.Log("Gone: " + gone);
     }
 }

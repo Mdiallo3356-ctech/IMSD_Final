@@ -3,7 +3,19 @@ guid: 73dfd8229cd37754f881ff928bacfff5
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - bc: {fileID: 4482379418565373829, guid: 4fc0c0a6020779a4c91714fa237bb048, type: 3}
+  - bcs: {fileID: 693660609214180747, guid: dd4c791948d3fcd429645a8cfa20ec10, type: 3}
+  - bs: {fileID: 1131778455102432175, guid: 6a2d9fb37d9e5614bb6dd1c789fb6431, type: 3}
+  - bsq: {fileID: 674435466229574904, guid: a8ee685a3c491b8498c7543307bd53a5, type: 3}
+  - gc: {fileID: 5020383302582095393, guid: d8b75e800782a8e47aa1e98875cf07c1, type: 3}
+  - gcs: {fileID: 5270379682201251893, guid: 2d995245145d8634da2910f58ea22a92, type: 3}
+  - gs: {fileID: 515977523542882088, guid: c93950b80710c5540acc2ce7eb728984, type: 3}
+  - gsq: {fileID: 783983926427105685, guid: 1e8cde933cd467e4c915afac330ec880, type: 3}
+  - pc: {fileID: 4304646588698589401, guid: 6546f221473d4ba4f96f5aebbd3f1404, type: 3}
+  - pcs: {fileID: 978757311914115857, guid: ea71c7973964b5a4fa73258fd43ca0fe, type: 3}
+  - ps: {fileID: 7845090803759772237, guid: e5f25cd5ffd480343b1b1eb976f8f0f7, type: 3}
+  - psq: {fileID: 4681544392000676090, guid: 4aeee393145994348bdcc7b28ca7d75b, type: 3}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 
