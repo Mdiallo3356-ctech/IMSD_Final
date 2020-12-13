@@ -16,7 +16,7 @@ public class crosshair : MonoBehaviour
     void Update()
     {
         myTransform.position = Input.mousePosition;
-        if(Input.GetMouseButton(0))
+        if(Input.GetMouseButtonDown(0))
         {
              Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
              RaycastHit hit;
