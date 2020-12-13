@@ -12,9 +12,10 @@ GameObject:
   - component: {fileID: 4019959076651310312}
   - component: {fileID: 5978366428846306648}
   - component: {fileID: -1895654041710573743}
+  - component: {fileID: -6385997922073460855}
   m_Layer: 0
   m_Name: green_capsule
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -94,3 +95,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   myTransform: {fileID: 3832669760044717181}
   health: 0
+--- !u!64 &-6385997922073460855
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5020383302582095393}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 1754159170433749250, guid: 72b3562339c79fc4a9d6a1985f947ded, type: 3}

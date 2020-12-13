@@ -12,9 +12,10 @@ GameObject:
   - component: {fileID: 5500763412268957004}
   - component: {fileID: 2983648777176880380}
   - component: {fileID: 6770978851131286193}
+  - component: {fileID: 425518551731513291}
   m_Layer: 0
   m_Name: blue_capsule
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -94,3 +95,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   myTransform: {fileID: 5669751013128664537}
   health: 0
+--- !u!64 &425518551731513291
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4482379418565373829}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 1754159170433749250, guid: 72b3562339c79fc4a9d6a1985f947ded, type: 3}

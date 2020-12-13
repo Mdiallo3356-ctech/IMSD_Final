@@ -12,9 +12,10 @@ GameObject:
   - component: {fileID: 8880583907847978545}
   - component: {fileID: 2161872886589921153}
   - component: {fileID: 7056028199067745403}
+  - component: {fileID: 9159850114673022526}
   m_Layer: 0
   m_Name: blue_squiggle
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -94,3 +95,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   myTransform: {fileID: 8775140381456365220}
   health: 0
+--- !u!64 &9159850114673022526
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 674435466229574904}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 1754159170433749250, guid: e9f132b0c303fbf4ba27c13023a0747e, type: 3}

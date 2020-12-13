@@ -12,9 +12,10 @@ GameObject:
   - component: {fileID: 6254406996158899383}
   - component: {fileID: 6680485563837747285}
   - component: {fileID: 6901608277836529286}
+  - component: {fileID: 1195225140117706615}
   m_Layer: 0
   m_Name: green_sphere
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -94,3 +95,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   myTransform: {fileID: 2186484353655798459}
   health: 0
+--- !u!64 &1195225140117706615
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 515977523542882088}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 2540817853737639666, guid: d3608ae6fd4ab5343b13ead995d258ba, type: 3}

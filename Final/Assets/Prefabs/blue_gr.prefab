@@ -12,9 +12,10 @@ GameObject:
   - component: {fileID: 756973513851652329}
   - component: {fileID: 4918038582526761505}
   - component: {fileID: 5029568967863172753}
+  - component: {fileID: 7242915428648343216}
   m_Layer: 0
   m_Name: blue_gr
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -94,3 +95,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   myTransform: {fileID: 8863868207039358251}
   health: 0
+--- !u!64 &7242915428648343216
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 693660609214180747}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4164511204261677510, guid: bfc6ae0d71e63dd47868dd6f677bdc87, type: 3}
