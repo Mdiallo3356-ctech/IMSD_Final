@@ -14,7 +14,7 @@ public class timer : MonoBehaviour
 
 
 
-    public float timeRemaining =0;
+    public float timeRemaining = 0;
     public bool timerIsRunning = false;
     public Text timeText;
     public GameObject gameManager;
@@ -65,7 +65,7 @@ public class timer : MonoBehaviour
     {
         if (a.isOn)
         {
-            timeRemaining = 0;
+            timeRemaining = 10;
         }
 
         else if (b.isOn)

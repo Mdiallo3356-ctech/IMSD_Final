@@ -12,13 +12,6 @@ public class GameManager : MonoBehaviour
     public Canvas survey;
     
 
-
-
-
-
-
-
-
     // Start is called before the first frame update
     public GameObject bc;
     public GameObject bcs;
@@ -42,7 +35,6 @@ public class GameManager : MonoBehaviour
     {   
         
         bacteria = new GameObject[] { bc, bcs, bs, bsq, gc, gcs, gs, gsq, pc, pcs, ps, psq };
-        InvokeRepeating("make", 1, 15);
     }
 
     // Update is called once per frame
@@ -132,17 +124,20 @@ public class GameManager : MonoBehaviour
     {
         if (none.isOn)
         {
+            hidden = 70;
             //parameters for spawn code based off not brushing
         }
 
         else if (once.isOn)
         {
+            hidden = 50;
             //parameters for spawn code based off brushing once  
         }
 
 
         else if (twice.isOn)
         {
+            hidden = 20;
             //parameters for spawn code based off brushing twice
         }
 
@@ -150,10 +145,12 @@ public class GameManager : MonoBehaviour
 
         else if (three.isOn)
         {
+            hidden = 1;
             //parameters for spawn code based off brushing three times
             
         }
 
+        InvokeRepeating("make", 1, 15);
     }
 
 
