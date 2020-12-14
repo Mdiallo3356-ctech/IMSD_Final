@@ -358,7 +358,7 @@ MonoBehaviour:
   onValueChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_IsOn: 1
+  m_IsOn: 0
 --- !u!1 &114992077
 GameObject:
   m_ObjectHideFlags: 0
@@ -1811,7 +1811,7 @@ MonoBehaviour:
   onValueChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_IsOn: 1
+  m_IsOn: 0
 --- !u!1 &787425898
 GameObject:
   m_ObjectHideFlags: 0
@@ -3312,6 +3312,7 @@ MonoBehaviour:
   b: {fileID: 233169818}
   c: {fileID: 242348215}
   d: {fileID: 114992079}
+  bad: {fileID: 2102981742}
   timeRemaining: 0
   timerIsRunning: 0
   timeText: {fileID: 1059474241}
@@ -4163,7 +4164,7 @@ GameObject:
   - component: {fileID: 2102981741}
   - component: {fileID: 2102981742}
   m_Layer: 5
-  m_Name: 3
+  m_Name: bad
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

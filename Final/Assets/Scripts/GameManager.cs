@@ -9,8 +9,8 @@ public class GameManager : MonoBehaviour
     public Toggle once;
     public Toggle twice;
     public Toggle three;
-    public Canvas survey;  
-
+    public Canvas survey;
+    
 
 
 
@@ -151,6 +151,7 @@ public class GameManager : MonoBehaviour
         else if (three.isOn)
         {
             //parameters for spawn code based off brushing three times
+            
         }
 
     }

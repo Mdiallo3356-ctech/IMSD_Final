@@ -9,6 +9,7 @@ public class timer : MonoBehaviour
     public Toggle b;
     public Toggle c;
     public Toggle d;
+    public Toggle bad;
 
 
 
@@ -84,6 +85,30 @@ public class timer : MonoBehaviour
         {
             timeRemaining = 90;
         }
+
+
+        if (d.isOn && bad.isOn)
+        {
+            timeRemaining = 9000;
+            Debug.Log("fart");
+        }
+
+        if (c.isOn && bad.isOn)
+        {
+            timeRemaining = 9000;
+            Debug.Log("fart");
+        }
+
+        if (b.isOn && bad.isOn)
+        {
+            timeRemaining = 9000;
+            Debug.Log("fart");
+        }
+
+
+
+
+
 
     }
 
