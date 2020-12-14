@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
@@ -102,8 +103,12 @@ public class GameManager : MonoBehaviour
         if((hidden+shown) < (hidden+shown+gone)*0.8)
         {
             Debug.Log("WIN!");
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
         }
-        else { Debug.Log("Not enough :("); }
+        else 
+        { 
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 2);
+        }
     }
 
     void destroy(GameObject obj)
