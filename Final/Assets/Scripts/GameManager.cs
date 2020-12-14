@@ -5,6 +5,20 @@ using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour
 {
+    public Toggle none;
+    public Toggle once;
+    public Toggle twice;
+    public Toggle three;
+    public Canvas survey;  
+
+
+
+
+
+
+
+
+
     // Start is called before the first frame update
     public GameObject bc;
     public GameObject bcs;
@@ -34,7 +48,22 @@ public class GameManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+
+
+
+
+
+        if (Input.GetKeyDown(KeyCode.Return))
+        {                                       
+            ActiveToggle(); //checks whats selected and changes code accordingly
+            survey.GetComponent<Canvas>().enabled = false;
+
+        }
+
+
+
+
+
     }
 
     void make()
@@ -69,9 +98,9 @@ public class GameManager : MonoBehaviour
             }
             
         }
-        Debug.Log("Hidden: " + hidden);
-        Debug.Log("Shown: " + shown);
-        Debug.Log("Gone: " + gone);
+        //Debug.Log("Hidden: " + hidden);
+        //Debug.Log("Shown: " + shown);
+        //Debug.Log("Gone: " + gone);
 
     }
 
@@ -91,8 +120,47 @@ public class GameManager : MonoBehaviour
         Destroy(obj, (float) 0.5);
         shown -= 1;
         gone += 1;
-        Debug.Log("Hidden: " + hidden);
-        Debug.Log("Shown: " + shown);
-        Debug.Log("Gone: " + gone);
+        //Debug.Log("Hidden: " + hidden);
+        //Debug.Log("Shown: " + shown);
+        //Debug.Log("Gone: " + gone);
     }
+
+
+
+
+    public void ActiveToggle() //looks for whats toggled
+    {
+        if (none.isOn)
+        {
+            //parameters for spawn code based off not brushing
+        }
+
+        else if (once.isOn)
+        {
+            //parameters for spawn code based off brushing once  
+        }
+
+
+        else if (twice.isOn)
+        {
+            //parameters for spawn code based off brushing twice
+        }
+
+
+
+        else if (three.isOn)
+        {
+            //parameters for spawn code based off brushing three times
+        }
+
+    }
+
+
+
+
+
+
+
+
+
 }
