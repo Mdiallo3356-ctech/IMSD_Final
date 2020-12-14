@@ -27,6 +27,7 @@ public class GameManager : MonoBehaviour
     public GameObject ps;
     public GameObject psq;
     GameObject[] bacteria;
+    bool hoard = false;
 
     double hidden = 50;
     double shown = 0;
@@ -69,7 +70,11 @@ public class GameManager : MonoBehaviour
         {
             for (int i = 0; i < hidden; i++)
             {
-                if (i >= 10)
+                if (i >= 10 && !hoard)
+                {
+                    break;
+                }
+                else if(i >= 20)
                 {
                     break;
                 }
@@ -158,6 +163,10 @@ public class GameManager : MonoBehaviour
         InvokeRepeating("make", 1, 15);
     }
 
+    public void hoards()
+    {
+        hoard = true;
+    }
 
 
 

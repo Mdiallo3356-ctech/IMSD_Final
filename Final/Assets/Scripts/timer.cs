@@ -67,6 +67,7 @@ public class timer : MonoBehaviour
         if (a.isOn)
         {
             timeRemaining = 10;
+            gameManager.SendMessage("hoards");
         }
 
         else if (b.isOn)
@@ -91,19 +92,16 @@ public class timer : MonoBehaviour
         if (d.isOn && bad.isOn)
         {
             timeRemaining = 9000;
-            Debug.Log("fart");
         }
 
         if (c.isOn && bad.isOn)
         {
             timeRemaining = 9000;
-            Debug.Log("fart");
         }
 
         if (b.isOn && bad.isOn)
         {
             timeRemaining = 9000;
-            Debug.Log("fart");
         }
 
 
