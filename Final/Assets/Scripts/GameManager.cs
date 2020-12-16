@@ -42,22 +42,12 @@ public class GameManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
-
-
-
-
         if (Input.GetKeyDown(KeyCode.Return))
         {                                       
             ActiveToggle(); //checks whats selected and changes code accordingly
             survey.GetComponent<Canvas>().enabled = false;
 
         }
-
-
-
-
-
     }
 
     void make()
@@ -74,7 +64,7 @@ public class GameManager : MonoBehaviour
                 {
                     break;
                 }
-                else if(i >= 20)
+                else if(i >= 40)
                 {
                     break;
                 }

@@ -13,8 +13,6 @@ public class timer : MonoBehaviour
     public Toggle bad;
 
 
-
-
     public float timeRemaining = 0;
     public bool timerIsRunning = false;
     public Text timeText;
