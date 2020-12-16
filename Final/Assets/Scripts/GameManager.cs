@@ -64,7 +64,7 @@ public class GameManager : MonoBehaviour
                 {
                     break;
                 }
-                else if(i >= 40)
+                else if(i >= 200)
                 {
                     break;
                 }
@@ -124,7 +124,7 @@ public class GameManager : MonoBehaviour
     {
         if (none.isOn)
         {
-            hidden = 70;
+            hidden = 2000;
             //parameters for spawn code based off not brushing
         }
 
